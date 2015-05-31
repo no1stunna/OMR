@@ -1,5 +1,8 @@
 Pinterest::Application.routes.draw do
-  # The priority is based upon order of creation: first created -> highest priority.
+  root "pages#home"
+
+  get "about" => "pages#about"
+  # The prioriy is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
